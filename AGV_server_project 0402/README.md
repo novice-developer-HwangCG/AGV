@@ -1,15 +1,14 @@
 SERVER 구상도
 
 server_project/
-│── rtmp/
-│   ├── nginx.conf          # 카메라 스트림
-├── docker-compose.yml
-├── Dockerfile
-├── redis_db.py
-├── static.py
-├── common.py
-├── requirements.txt
-└── server.py
+ - rtmp/  nginx.conf          # 카메라 스트림
+- docker-compose.yml
+- Dockerfile
+- redis_db.py
+- static.py
+- common.py
+- requirements.txt
+- server.py
 
 실행 방법 - 개발 단계
 - docker-compose up -d
