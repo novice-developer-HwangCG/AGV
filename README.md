@@ -9,21 +9,20 @@ ros2 launch agv_robot_project agv_launch.py
 
 PC (GUI)  →  SERVER (PC↔Robot 연결)  →  connect_node.py (AGV ROS2 패키지 내부)
 
-connect_node.py  →  drive_node.py (라인트레이싱)  
-                 →  lidar_node.py (LIDAR 거리 측정)  
-                 →  ethernet_node.py (외부 점검 장비)
-                 →  watchdog_node.py (긴급 정지 감시)
+connect_node.py  
+→  drive_node.py (라인트레이싱)
+→  lidar_node.py (LIDAR 거리 측정)
+→  ethernet_node.py (외부 점검 장비)
+→  watchdog_node.py (긴급 정지 감시)
 
 
 의문점
 
 노트북 - 젯슨 자비에 nx = 유선 랜선사용?????
 
-lidar - pico - jetson
 motor - pico - jetson
 
 agv_project src 내부에 pico 통신 추가 (모터 제어 속도 값 전송)
-
 
 
 통신 이벤트
