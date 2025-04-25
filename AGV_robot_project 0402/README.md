@@ -1,27 +1,21 @@
 Robot 구상도
 
 agv_project/                 # AGV ROS2 패키지
-│── launch/
-│   ├── agv_launch.py    # 모든 노드 실행
-│
-│── src/agv_node/
-│   ├── connect_node.py      # PC 서버와 AGV 간 연결 (PC ↔ Robot 통신)
-│   ├── drive_node.py        # 라인트레이싱 + 속도 프로파일 (S-curve / Trapezoidal)
-│   ├── lidar_node.py        # LIDAR 거리 측정 및 Zero Set
-│   ├── ethernet_node.py     # 점검장비와 이더넷 통신
-│   ├── watchdog_node.py     # Watchdog 기능 (노드 비정상 종료 시 긴급 정지)
-│
-│── config/
-│   ├── params.yaml          # 속도 설정, LIDAR 설정 등 필요 X
-│
-│── scripts/
-│   ├── emergency_stop.py    # 긴급 정지 기능 추가
-│   ├── camerastream.sh      # 카메라 스트림 기능
-│
-│── .env
-│── package.xml
-│── requirements.txt
-└── setup.py
+- launch/  agv_launch.py    # 모든 노드 실행
+- src/  agv_robot_project/
+  - connect_node.py      # PC 서버와 AGV 간 연결 (PC ↔ Robot 통신)
+  - drive_node.py        # 라인트레이싱 + 속도 프로파일 (S-curve / Trapezoidal)
+  - lidar_node.py        # LIDAR 거리 측정 및 Zero Set
+  - ethernet_node.py     # 점검장비와 이더넷 통신
+  - watchdog_node.py     # Watchdog 기능 (노드 비정상 종료 시 긴급 정지)
+- config/  params.yaml          # 속도 설정, LIDAR 설정 등 필요 X
+- scripts/
+  - emergency_stop.py    # 긴급 정지 기능 추가
+  - camerastream.sh      # 카메라 스트림 기능
+- .env
+- package.xml
+- requirements.txt
+- setup.py
 
 src 디렉터리 내에 코드 파일 추가 pico_node.py
 - 모터에게 속도 명령 값을 받아 보내는건 pico가 담당 (jetson → pico → motor)
