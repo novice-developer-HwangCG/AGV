@@ -1,3 +1,5 @@
+Work in progress — detailed description coming soon.
+
 총 구상도
 
 PC ↔ SERVER ↔ Robot
