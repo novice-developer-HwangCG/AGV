@@ -1,4 +1,7 @@
-Work in progress — detailed description coming soon.
+The original project has been discontinued; a new project, AGV_REMAKE, has been created. Please visit the following link:
+
+https://github.com/novice-developer-HwangCG/AGV_REMAKE
+
 
 총 구상도
 
@@ -157,5 +160,6 @@ A. 해결 방법
 - rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 - colcon build --symlink-install
 - source install/setup.bash
+
 
 
