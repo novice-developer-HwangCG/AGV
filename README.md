@@ -3,6 +3,8 @@ The original project has been discontinued; a new project, AGV_REMAKE, has been 
 https://github.com/novice-developer-HwangCG/AGV_REMAKE
 
 
+
+
 총 구상도
 
 PC ↔ SERVER ↔ Robot
@@ -160,6 +162,7 @@ A. 해결 방법
 - rosdep install --from-paths src --ignore-src -r -y --rosdistro humble
 - colcon build --symlink-install
 - source install/setup.bash
+
 
 
 
